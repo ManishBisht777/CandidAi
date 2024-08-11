@@ -31,11 +31,15 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
+import { UserButton } from "@clerk/nextjs";
+import { AddNewInterview } from "@/components/AddNewInterview";
 
 export default function Home() {
   return (
     <main className="p-10 bg-[#fcfaf8] flex flex-col items-center justify-center">
       <h1 className="text-2xl leading-9 font-bold text-[#202020]">Today</h1>
+      <AddNewInterview />
+      <UserButton />
       <p className="text-sm leading-4 text-[#202020]">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
         iusto ipsum dolorum corrupti sapiente. Natus itaque magnam, tenetur
